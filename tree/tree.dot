@@ -1,0 +1,38 @@
+digraph List {
+node [shape="circle"]
+"box0" [shape = "record", label = "{+}"]
+"box1" [shape = "record", label = "{+}"]
+"box2" [shape = "record", label = "{*}"]
+"box3" [shape = "record", label = "{^}"]
+"box4" [shape = "record", label = "{sin}"]
+"box5" [shape = "record", label = "{x}"]
+"box4" -> "box5"
+"box3" -> "box4"
+"box6" [shape = "record", label = "{ctg}"]
+"box7" [shape = "record", label = "{x}"]
+"box6" -> "box7"
+"box3" -> "box6"
+"box2" -> "box3"
+"box8" [shape = "record", label = "{A}"]
+"box2" -> "box8"
+"box1" -> "box2"
+"box9" [shape = "record", label = "{*}"]
+"box10" [shape = "record", label = "{B}"]
+"box9" -> "box10"
+"box11" [shape = "record", label = "{^}"]
+"box12" [shape = "record", label = "{x}"]
+"box11" -> "box12"
+"box13" [shape = "record", label = "{x}"]
+"box11" -> "box13"
+"box9" -> "box11"
+"box1" -> "box9"
+"box0" -> "box1"
+"box14" [shape = "record", label = "{*}"]
+"box15" [shape = "record", label = "{-1}"]
+"box14" -> "box15"
+"box16" [shape = "record", label = "{sin}"]
+"box17" [shape = "record", label = "{x}"]
+"box16" -> "box17"
+"box14" -> "box16"
+"box0" -> "box14"
+}
